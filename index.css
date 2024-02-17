@@ -1,9 +1,5 @@
 * {
     margin: 0;
-
-    font-family: "Roboto Condensed", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
 }
 
 /* COLOR PALETTE */
@@ -11,6 +7,10 @@
 
 html {
     scroll-padding-top: 5em;
+
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
 }
 
 :root {
@@ -28,6 +28,10 @@ html {
     height: 30em;
     color: white;
     margin-bottom: 5em;
+
+    font-family: "Ubuntu Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
 }
 
 #menu {
