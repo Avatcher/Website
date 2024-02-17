@@ -154,17 +154,23 @@ html {
 
 .project > .contents > .links {
     position: relative;
-    width: 100%;
+    width: fit-content;
     text-align: right;
-    padding-top: 1em;
+    /* margin: 1em; */
+    margin: 1em 0 1em auto;
 }
 
 .project > .contents > .links > a {
     font-size: 18pt;
+    color: white;
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: .25em;
+    margin-left: -.25em;
 }
 
 .project > .contents > .links > a:hover {
-    border-bottom: 0;
+    background-color: rgba(0, 0, 0, .15);
 }
 
 .project.cinnamon {
@@ -176,6 +182,11 @@ html {
 
 .project.cinnamon > .contents > .links > a {
     color: rgba(61, 59, 142);
+    border-color: rgba(61, 59, 142);
+}
+
+.project.cinnamon > .contents > .links > a:hover {
+    background-color: rgba(224, 114, 164, .25);
 }
 
 .spacer {
