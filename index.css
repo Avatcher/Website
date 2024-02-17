@@ -9,10 +9,9 @@
 /* COLOR PALETTE */
 /* https://coolors.co/e4572e-29335c-f3a712-a8c686-669bbc */
 
-/* html {
-    background-color: black;
-    color: white;
-} */
+html {
+    scroll-padding-top: 5em;
+}
 
 :root {
     /* --header-color-rgb: 149, 169, 125; */
@@ -26,7 +25,7 @@
 #header {
     position: relative;
     background-color: var(--header-color);
-    min-height: 30em;
+    height: 30em;
     color: white;
     margin-bottom: 5em;
 }
