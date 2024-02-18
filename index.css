@@ -25,7 +25,7 @@ html {
 #header {
     position: relative;
     background-color: var(--header-color);
-    height: 30em;
+    height: 100vh;
     color: white;
     margin-bottom: 5em;
 
@@ -63,7 +63,7 @@ html {
 
 #title {
     position: absolute;
-    bottom: .5em;
+    bottom: 2em;
     right: 1em;
     margin-left: .5em;
     font-family: "Ubuntu Mono", monospace;
@@ -75,6 +75,7 @@ html {
 @media screen and (max-width: 1360px) and (orientation: portrait) {
     #title {
         font-size: 46pt;
+        bottom: 4em;
         /* right: .25em */
     }
 }
