@@ -72,8 +72,9 @@ html {
 }
 
 #content {
-    max-width: 40%;
+    max-width: 40em;
     margin: auto;
+    padding: 0 1em 0 1em;
 }
 
 #content > article {
