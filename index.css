@@ -71,6 +71,13 @@ html {
     line-height: .8;
 }
 
+@media (orientation: portrait) {
+    #title {
+        font-size: 40pt;
+        right: .25em
+    }
+}
+
 #content {
     max-width: 40em;
     margin: auto;
