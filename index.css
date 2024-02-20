@@ -62,22 +62,26 @@ html {
     border-bottom: solid white 2px;
 }
 
+@media (max-width: 600px) {
+    #menu > a {
+        display: none;
+    }
+}
+
 #title {
     position: absolute;
-    bottom: 2em;
+    bottom: 1.5em;
     right: 1em;
     margin-left: .5em;
     font-family: "Ubuntu Mono", monospace;
     font-weight: 800;
-    font-size: 100pt;
+    font-size: 8vw;
     line-height: .8;
 }
 
-@media screen and (max-width: 1360px) and (orientation: portrait) {
+@media screen and (orientation: portrait) {
     #title {
-        font-size: 46pt;
         bottom: 4em;
-        /* right: .25em */
     }
 }
 
