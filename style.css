@@ -141,6 +141,9 @@ footer {
 
 /* Changes styles, if visited from mobile */
 @media (pointer:none), (pointer:coarse) {
+    header {
+        align-items: center;
+    }
     #website-title {
         margin-left: -.5em;
     }
