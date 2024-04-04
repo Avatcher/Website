@@ -1,28 +1,36 @@
 
 let navigationMenu = {
-    element: document.getElementsByTagName("nav")[0],
+    popup: document.getElementsByTagName("nav")[0],
+    button: document.getElementById("navmenu"),
     isShown: false,
     animationTime: .5,
 
+    click() {
+        this.show()
+
+        // Replay click animation
+        let animationClass = "navmenu-click-animation"
+        this.button.classList.remove(animationClass);
+        void this.button.offsetWidth;
+        this.button.classList.add(animationClass);
+    },
+
     show() {
-        if (this.isShown) this.close()
-        else this.open()
+        if (this.isShown) this.close();
+        else this.open();
     },
 
     open() {
-        this.element.style.display = 'inherit'
-        this.isShown = true
-        this.element.style.animation = `navmenu-popup-open ${this.animationTime}s `
+        this.popup.style.display = 'inherit';
+        this.isShown = true;
+        this.popup.style.animation = `navmenu-popup-open ${this.animationTime}s`;
     },
 
     close() {
-        this.element.style.animation = `navmenu-popup-close ${this.animationTime}s `
+        this.popup.style.animation = `navmenu-popup-close ${this.animationTime}s`;
         setTimeout(() => {
-            this.element.style.display = 'none'
-            this.isShown = false
-        }, this.animationTime * 1000 - 1)
+            this.popup.style.display = 'none';
+            this.isShown = false;
+        }, this.animationTime * 1000 - 1);
     }
 }
-
-console.log("run")
-console.log("element: ", navigationMenu.element)
