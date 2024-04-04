@@ -40,7 +40,7 @@ header {
     padding-bottom: 1em;
     background-color: var(--color-white);
     box-shadow: rgba(0,0,0,.2) 0 0 10px;
-    
+    position: fixed;
 }
 
 #website-title {
@@ -67,7 +67,6 @@ nav > a:hover {
     border-bottom: solid var(--color-dark-green) 1px;
 }
 
-
 footer {
     width: 100%;
     margin-top: auto;
@@ -83,7 +82,7 @@ footer {
 
 .home-banner {
     width: 100%;
-    height: 20em;
+    height: 50vh;
     background: url("images/tile-home.png") repeat;
     box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
     animation: banner-move 120s linear infinite;
@@ -91,7 +90,7 @@ footer {
 
 .hobbies-banner {
     width: 100%;
-    height: 20em;
+    height: 50vh;
     background: url("images/tile-hobbies.png") repeat;
     box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
     animation: banner-move 120s linear infinite;
@@ -99,7 +98,7 @@ footer {
 
 .contact-banner {
     width: 100%;
-    height: 20em;
+    height: 50vh;
     background: url("images/tile-contact.png") repeat;
     box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
     animation: banner-move 120s linear infinite;
@@ -108,7 +107,7 @@ footer {
 @keyframes banner-move {
     to {
         background-position-x: 1000%;
-        background-position-y: 8000%;
+        background-position-y: 5000%;
     }
 }
 
@@ -117,9 +116,13 @@ a {
     text-decoration: none;
 }
 
-.content {
+#content {
+    margin-top: -10vh;
+}
+
+article {
     width: 30%;
-    min-width: 500px;
+    min-width: 20em;
     margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
@@ -127,7 +130,6 @@ a {
     padding-bottom: 2em;
     border-radius: 10px;
     box-shadow: rgba(0,0,0,.2) 0 0 5px;
-
     background-color: var(--color-white);
 }
 
