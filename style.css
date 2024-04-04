@@ -80,29 +80,19 @@ footer {
     position: sticky;
 }
 
-.home-banner {
+.banner {
     width: 100%;
     height: 50vh;
-    background: url("images/tile-home.png") repeat;
+    background-repeat: repeat;
     box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
     animation: banner-move 120s linear infinite;
 }
 
-.hobbies-banner {
-    width: 100%;
-    height: 50vh;
-    background: url("images/tile-hobbies.png") repeat;
-    box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
-    animation: banner-move 120s linear infinite;
-}
+.home-banner { background: url("images/tile-home.png"); }
 
-.contact-banner {
-    width: 100%;
-    height: 50vh;
-    background: url("images/tile-contact.png") repeat;
-    box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
-    animation: banner-move 120s linear infinite;
-}
+.hobbies-banner { background: url("images/tile-hobbies.png"); }
+
+.contact-banner { background: url("images/tile-contact.png"); }
 
 @keyframes banner-move {
     to {
