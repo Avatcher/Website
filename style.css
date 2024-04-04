@@ -51,7 +51,7 @@ header {
     box-shadow: rgba(0,0,0,.2) 0 0 10px;
     position: fixed;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     --header-height: height;
 }
 
