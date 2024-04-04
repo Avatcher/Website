@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color-red: #a75c56;
+    --color-green: #92ad8c;
+    --color-dark-green: #52714c;
+    --color-white: #f0f0f0;
+    --color-white-greenish: #d2e1cf;
+    --color-gray: #c5c5c5;
+    --color-black: #2f2f2f;
+
+    --background: var(--color-green);
+    --shadow: var(--color-dark-green)
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    background-color: var(--color-green);
+    color: var(--color-black);
+    font-family: 'Roboto', 'Courier', monospace;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    padding-left: 2em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    background-color: var(--color-white);
+    box-shadow: rgba(0,0,0,.2) 0 0 10px;
+    
+}
+
+#website-title {
+    font-size: 20pt;
+    font-weight: 700;
+    font-family: 'Source Code Pro';
+    margin-right: 1.5em;
+}
+
+#website-title:hover {
+    color: var(--color-dark-green);
+}
+
+nav {
+    display: inline;
+}
+
+nav > a {
+    margin: .5em;
+}
+
+nav > a:hover {
+    color: var(--color-dark-green);
+    border-bottom: solid var(--color-dark-green) 1px;
+}
+
+
+footer {
+    width: 100%;
+    margin-top: auto;
+    padding: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+    font-family: 'Source Code Pro';
+    color: var(--color-white);
+    background-color: var(--color-black);
+    position: sticky;
+}
+
+.home-banner {
+    width: 100%;
+    height: 20em;
+    background: url("images/tile-home.png") repeat;
+    box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
+    animation: banner-move 120s linear infinite;
+}
+
+.hobbies-banner {
+    width: 100%;
+    height: 20em;
+    background: url("images/tile-hobbies.png") repeat;
+    box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
+    animation: banner-move 120s linear infinite;
+}
+
+.contact-banner {
+    width: 100%;
+    height: 20em;
+    background: url("images/tile-contact.png") repeat;
+    box-shadow: inset rgba(0,0,0,.2) 0 0 50px;
+    animation: banner-move 120s linear infinite;
+}
+
+@keyframes banner-move {
+    to {
+        background-position-x: 1000%;
+        background-position-y: 8000%;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.content {
+    width: 30%;
+    min-width: 500px;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 15px;
+    padding-bottom: 2em;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,.2) 0 0 5px;
+
+    background-color: var(--color-white);
+}
+
+.content h1 {
+    margin-bottom: .5em;
+}
+
+.inline-button {
+    display: inline;
+    color: var(--color-dark-green);
+    padding: 3px;
+    border-radius: 5px;
+    border: solid var(--color-dark-green) 1px;
+}
+
+.inline-button:hover {
+    transition: .25s;
+    background-color: var(--color-white-greenish);
+}
+
+#learn-more{
+    margin-top: 3em;
+    text-decoration: none;
+}
+
+.nav-button {
+    display: inline;
+    text-align: center;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--color-black);
+    box-shadow: rgba(0,0,0,.4) 0 0 5px;
+}
+
+.nav-button:hover {
+    transition: .15s;
+    background-color: var(--color-dark-green);
+}
+
+.indev-button:hover  {
+    transition: 0s;
+    background-color: var(--color-red);
+}
+
+.indev-button:hover span {
+    display: none;
+}
+
+.indev-button:hover:before {
+    content: "Not done yet";
+}
