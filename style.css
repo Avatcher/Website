@@ -221,7 +221,7 @@ article {
     background-color: var(--color-white);
 }
 
-.content h1 {
+article > h1 {
     margin-bottom: .5em;
 }
 
