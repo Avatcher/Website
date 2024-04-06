@@ -225,6 +225,10 @@ article > h1 {
     margin-bottom: .5em;
 }
 
+ul > li {
+    margin-bottom: .25em;
+}
+
 .inline-button {
     display: inline;
     color: var(--color-dark-green);
