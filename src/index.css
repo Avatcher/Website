@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  --header-height: 5vh;
+
+  --color-green: #92ad8c;
+  --color-red: #cb6464;
+  --color-black: #2f2f2f;
+  --color-white: #f0f0f0;
+
+  --banner-tile-size: 256px;
+
+  --content-background: var(--color-white);
+
+  --header-background: var(--color-white);
+  --header-text: var(--color-black);
+
+  --footer-background: var(--color-black);
+  --footer-text: var(--color-white);
+
+  --article-background: var(--color-white);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}

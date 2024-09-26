@@ -1,0 +1,22 @@
+.Banner {
+    width: min(100% 100vw);
+    height: 50vh;
+
+    background-size: var(--banner-tile-size) !important;
+    box-shadow: inset rgba(0,0,0,.2) 0 0 10px;
+    animation: tiles-movement 5s linear infinite;
+}
+
+.Banner + .Content {
+    margin-top: -15vh;
+}
+
+@keyframes tiles-movement {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: calc(var(--banner-tile-size) * 3);
+        background-position-y: var(--banner-tile-size);
+    }
+}
