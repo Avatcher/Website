@@ -55,9 +55,7 @@ function Layout(props) {
         <>
             <Header />
             {bannerImage ? <Banner img={bannerImage} /> : <></>}
-            <div className="Content">
-                {props.children}
-            </div>
+            {props.children}
             <Footer />
         </>
     )
