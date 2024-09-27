@@ -30,14 +30,9 @@
     text-align: center;
 }
 
-.ArticleNavbar-Buttons > .delete {
-    background-color: var(--color-red);
-    color: blue;
-}
-
 article {
     background-color: var(--article-background);
-    box-shadow: rgba(0, 0, 0, .5) 0 0 5px;
+    box-shadow: rgba(0, 0, 0, .3) 0 0 5px;
     border-radius: 6px;
     max-width: 30em;
     margin-bottom: 4em;
