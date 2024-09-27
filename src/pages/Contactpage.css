@@ -1,0 +1,22 @@
+﻿
+.Contact {
+    display: inline-block;
+    width: 10em;
+    text-align: center;
+    padding: 1em 0 1em;
+    margin: .5em;
+    background: var(--article-background);
+    border-radius: 6px;
+
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--color-black);
+
+    box-shadow: rgba(0,0,0,.2) 0 0 5px;
+}
+
+.Contact:hover {
+    background-color: var(--color-green);
+    color: var(--color-white);
+}

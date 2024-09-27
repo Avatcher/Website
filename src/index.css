@@ -5,10 +5,14 @@
   --header-height: 5vh;
 
   --color-green: #92ad8c;
+  --color-dark-green: #6c7969;
   --color-red: #cb6464;
   --color-yellow: #ffc600;
+  --color-purple: #5e428d;
+  --color-pink: #e72068;
   --color-black: #2f2f2f;
   --color-white: #f0f0f0;
+  --color-gray: #cbcbcb;
 
   --banner-tile-size: 256px;
 
@@ -46,4 +50,8 @@ body {
   'wght' 400,
   'GRAD' 0,
   'opsz' 24
+}
+
+.centered {
+  text-align: center;
 }
