@@ -6,9 +6,9 @@ function ArticleNavbar(props) {
         <div className="ArticleNavbar">
             <h1>{title}</h1>
             <div className="ArticleNavbar-Buttons">
-                <div className="minimize"><span class="material-symbols-outlined">remove</span></div>
-                <div className="fullscreen"><span class="material-symbols-outlined">stop</span></div>
-                <div className="close"><span class="material-symbols-outlined">close</span></div>
+                <div className="minimize"><span className="material-symbols-outlined">remove</span></div>
+                <div className="fullscreen"><span className="material-symbols-outlined">stop</span></div>
+                <div className="close"><span className="material-symbols-outlined">close</span></div>
             </div>
         </div>
     )
