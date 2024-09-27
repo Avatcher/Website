@@ -4,7 +4,7 @@ import './Layout.css'
 
 function NavButton(props) {
     return (
-        <a href={props.href}>{props.text}</a>
+        <li><a href={props.href}>{props.text}</a></li>
     )
 }
 
@@ -41,10 +41,19 @@ function Header() {
 function Footer() {
     return (
         <footer>
-            <ul className="Navigation">
-                <NavButton href="/" text="Homepage" />
-                <Navigation />
-            </ul>
+            <div className="Footer-Sections">
+                <ul className="Navigation">
+                    <h1>Pages</h1>
+                    <NavButton href="/" text="Homepage"/>
+                    <Navigation/>
+                </ul>
+                <ul className="Navigation">
+                    <h1>Other</h1>
+                    <NavButton href="https://github.com/Avatcher/Avatcher.github.io"
+                               text="Website source"/>
+                </ul>
+            </div>
+            <div className="Footer-Copyright">Copyright (c) 2024 Dmytro Pravdin</div>
         </footer>
     )
 }
@@ -53,10 +62,10 @@ function Layout(props) {
     let bannerImage = props.bannerImage
     return (
         <>
-            <Header />
-            {bannerImage ? <Banner img={bannerImage} /> : <></>}
+            <Header/>
+            {bannerImage ? <Banner img={bannerImage}/> : <></>}
             {props.children}
-            <Footer />
+            <Footer/>
         </>
     )
 }

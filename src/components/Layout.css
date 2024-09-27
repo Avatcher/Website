@@ -20,6 +20,10 @@ header a {
     margin-right: 1em;
 }
 
+header li {
+    display: inline;
+}
+
 header a:hover {
     border-bottom: 2px var(--color-green) solid;
 }
@@ -42,25 +46,44 @@ footer {
     font-family: "Source Code Pro", monospace;;
     font-size: 14pt;
 
-    padding: 2em 4em 4em 2em;
+    padding: 2em 4em 2em 2em;
     background-color: var(--footer-background);
     color: var(--footer-text);
 }
 
-footer > * {
-    display: inline-block;
-    margin: auto;
+.Footer-Sections {
+    margin-top: 2em;
+    margin-left: auto;
+    width: fit-content;
 }
 
-footer > .Navigation {
+footer .Navigation {
     list-style: none;
+    line-height: 1.25;
+    display: inline-block;
+    vertical-align: top;
 }
 
-footer > .Navigation > ul {
-    line-height: 2;
+footer .Navigation > * {
+    margin-right: 6rem;
+}
+
+footer .Navigation h1 {
+    margin-bottom: .5em;
+    font-size: 22pt;
 }
 
 footer a {
     color: inherit;
     text-decoration: none;
 }
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.Footer-Copyright {
+    margin: 4em auto auto;
+    text-align: center;
+}
+
